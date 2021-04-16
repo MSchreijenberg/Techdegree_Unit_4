@@ -1,0 +1,34 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color .5s ease-in;
+ }
+  
+  .default {
+    @include button($tertiary-color);
+  }
+  
+  .error {
+    @include button(map-get($themes, 'col-9' ));
+  }
+  
+  .info {
+    @include button(map-get($themes, 'col-1' ));    
+  }
+  
+  .success {
+    @include button(map-get($themes, 'col-10' ));  
+  }
+  
+  .warning {
+    @include button(map-get($themes, 'col-2' ));  
+  }
